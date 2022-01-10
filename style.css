@@ -40,13 +40,14 @@ body{
 }
 .search-box{
     background-color: var(--color-white);
-    width: 496px;
+    width: 450px;
     height:36px;
     border: none;
     padding: 5px 15px;
     Font-size:15px;
     outline:none;
     position:relative;
+    letter-spacing: -0.3px;
 }
 .search-icon{
     color:var(--color-theme-blue);
@@ -65,10 +66,10 @@ body{
 .login-btn:visited{
     text-decoration: none;
     color:var(--color-theme-blue);
-    font-weight :bold;
+    font-weight : 700;
     background-color: var(--color-white);
     display:inline-block;
-    padding:3px 35px;
+    padding:4px 40px;
     margin-left:70px;
 }
 
