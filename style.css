@@ -3,6 +3,8 @@
 :root{
     --color-theme-blue : #2874f0;
     --color-white : #fff;
+    --color-black: #000;
+    --color-grey:#adb5bd;
 }
 *{
     margin:0;
@@ -108,3 +110,52 @@ body{
     --ionicon-stroke-width: 50px;
     cursor:pointer;
 }
+
+/* Menu */
+.section-menu{
+    margin-bottom:5px;
+    padding:10px 0;
+    width:100%;
+    box-shadow: 0px 0.5px 3px var(--color-grey);
+    background-color:var(--color-white);
+}
+.items{
+    gap:50px;
+}
+.item-container{
+    display:flex;
+    flex-direction: column;
+    gap:0px;
+    justify-content: center;
+    align-items: center;
+}
+.item-img{
+    cursor:pointer;
+    width:64px;   
+}
+
+.menu-item:link,
+.menu-item:visited{
+    text-decoration: none;
+    color:var(--color-black);
+    display:inline-block;
+    font-size:14px;
+    font-weight: 500;
+}
+.menu-item:active,
+.menu-item:hover{
+    color:var(--color-theme-blue);
+}
+
+.down-arrow-menu{
+    color:var(--color-black);
+    cursor:pointer;
+}
+.down-arrow-menu:hover,
+.down-arrow-menu:active{
+    color:var(--color-theme-blue);
+}
+.beauty-img{
+    margin:0 50px;
+}
+
