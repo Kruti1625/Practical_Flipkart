@@ -4,9 +4,299 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
     <title>Flipkart home page</title>
 </head>
 <body>
+    <!-- Header Section -->
+        <header class="header-section container">
+            <!-- Flex item 1 -->
+            <div class="flex1">
+                <img class="logo" src="images/logo.jpg" alt="Flipkart logo"
+                width="82px";
+                height="33px"/>
+            </div>
+            <!-- Flex item 2 -->
+            <div class="flex2">
+                <div class="container search-bar">
+                    <input class="search-box" type="text" placeholder="Search for products, brands and more"/>
+                    <ion-icon class="search-icon" name="search"></ion-icon>
+                </div>
+            </div>
+            <!-- Flex item 3 -->
+            <div class="flex3">
+                <a class="login-btn" href="#" >Login</a>
+            </div>
+            <!-- Flex item 4 -->
+            <div class="flex4">
+                <div class="container" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="more-btn" href="#" >More</a>
+                    <ion-icon class="down-arrow" name="chevron-down"></ion-icon>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="container">
+                        <ion-icon class="dropdown-icon" name="notifications"></ion-icon>
+                        <a class="dropdown-item" href="#">Notification Preferences</a>
+                    </li>
+                    <li class="container">
+                        <ion-icon class="dropdown-icon" name="bag-handle"></ion-icon>
+                        <a class="dropdown-item" href="#">Sell on Flipkart</a></li>
+                    <li class="container">
+                        <ion-icon class="dropdown-icon" name="help-circle"></ion-icon>
+                        <a class="dropdown-item" href="#">24×7 Customer Care</a>
+                    </li>
+                    <li class="container">
+                        <ion-icon class="dropdown-icon" name="trending-up"></ion-icon>
+                        <a class="dropdown-item" href="#">Advertise</a>
+                    </li>
+                    <li class="container">
+                        <ion-icon class="dropdown-icon" name="download"></ion-icon>
+                        <a class="dropdown-item" href="#">Download App</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Flex item 5 -->
+            <div class="flex5">
+                <div class="container">
+                    <ion-icon class="cart-icon" name="cart"></ion-icon>
+                    <a class="cart-btn" href="#" >Cart</a>
+                </div>
+            </div>
+        </header>
+    <!-- Menu Section -->
+        <section class="section-menu">
+            <div class="container items">
+                <!-- Flex item 1 -->
+                <div class="item-container sim-item">
+                    <img class="item-img" src="images/top-offers.png" alt="top-offers" />
+                    <a href="#" class="menu-item">Top offers</a>
+                </div>
+                <!-- Flex item 2 -->
+                <div class="item-container sim-item">
+                    <img class="item-img" src="images/grocery.png" alt="Grocery" />
+                    <a href="#" class="menu-item">Grocery</a>
+                </div>
+                <!-- Flex item 3 -->
+                <div class="item-container sim-item">
+                    <img class="item-img" src="images/mobiles.png" alt="Mobiles" />
+                    <a href="#" class="menu-item">Mobiles</a>
+                </div>
+                <!-- Flex item 4 -->
+                <div>
+                    <div class="item-container" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="item-img" src="images/fashion.png" alt="Fashion" />
+                        <div class="container">
+                            <a class="menu-item" href="#" >Fashion</a>
+                            <ion-icon class="down-arrow-menu" name="chevron-down"></ion-icon>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Men's wear</a></li>
+                        <li><a class="dropdown-item" href="#">Women's wear</a></li>
+                        <li><a class="dropdown-item" href="#">Kid's wear</a></li>
+                    </ul>
+                </div>
+                <!-- Flex item 5 -->
+                <div>
+                    <div class="item-container" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="item-img" src="images/electronics.png" alt="Electronics" />
+                        <div class="container">
+                            <a class="menu-item" href="#" >Electronic</a>
+                            <ion-icon class="down-arrow-menu" name="chevron-down"></ion-icon>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Laptop</a></li>
+                        <li><a class="dropdown-item" href="#">Desktop</a></li>
+                        <li><a class="dropdown-item" href="#">HeadPhones</a></li>
+                        <li><a class="dropdown-item" href="#">Tablets</a></li>
+                    </ul>
+                </div>
+                <!-- Flex item 6 -->
+                <div>
+                    <div class="item-container sim-item" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="item-img" src="images/home.jpg" alt="Home" />
+                        <div class="container">
+                            <a class="menu-item" href="#">Home</a>
+                            <ion-icon class="down-arrow-menu" name="chevron-down"></ion-icon>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Living Room</a></li>
+                        <li><a class="dropdown-item" href="#">Bed Room</a></li>
+                        <li><a class="dropdown-item" href="#">Kichen & Dining Room</a></li>
+                        <li><a class="dropdown-item" href="#">Kids Furniture</a></li>
+                        <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                    </ul>
+                </div>
+                <!-- Flex item 7 -->
+                <div>
+                    <div class="item-container" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="item-img" src="images/appliances.png" alt="Appliances" />
+                        <div class="container">
+                            <a class="menu-item" href="#">Appliance</a>
+                            <ion-icon class="down-arrow-menu" name="chevron-down"></ion-icon>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Washing Machine</a></li>
+                        <li><a class="dropdown-item" href="#">Air Conditioners</a></li>
+                        <li><a class="dropdown-item" href="#">Refrigerator</a></li>
+                    </ul>
+                </div>
+                <!-- Flex item 8 -->
+                <div class="item-container sim-item">
+                    <img class="item-img" src="images/travel.png" alt="Travel" />
+                    <a href="#" class="menu-item">Travel</a>
+                </div>
+                <!-- Flex item 9 -->
+                <div>
+                    <div class="item-container" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="item-img beauty-img" src="images/beauty,toy.png" alt="Beauty,Toy & More" />
+                        <div class="container">
+                            <a class="menu-item" href="#">Beauty,Toy & More</a>
+                            <ion-icon class="down-arrow-menu" name="chevron-down"></ion-icon>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Sports & Fitness</a></li>
+                        <li><a class="dropdown-item" href="#">Stationary</a></li>
+                        <li><a class="dropdown-item" href="#">Cosmetics</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+
     
+    <!-- Deals Section -->
+        <section class="section-items container">
+            <!-- Items Container-->
+            <div class="items-container">
+                <!-- Items Heading -->
+                <div class="items-heading-container container">
+                    <div class="heading-item1">
+                        <div class="heading">
+                            Deals of the Day
+                        </div>
+                        <div class="timer">
+                            <img src="images/timer.svg" alt="timer" width="22px"/> 
+                            <div class="time">20&nbsp;:&nbsp;25&nbsp;:&nbsp;16 Left</div>
+                        </div>
+                    </div>
+                    <a class="view-btn" href="#">view all</a> 
+                </div>
+                <!-- Items -->
+                <div class="container deals-item-container">
+                    <!-- Flex item 1 -->
+                    <div class="item-container deals-item">
+                        <img src="images/bean_bag_covers.jpeg" alt="Bean Bag Covers"/>
+                        <a class="item-title" href="#">Bean Bag Covers</a>
+                        <a class="prices" href="#">Extra 10% Off</a>
+                        <a class="about" href="#">Space Saving Furniture</a>
+                    </div>
+                    <!-- Flex item 2 -->
+                    <div class="item-container deals-item">
+                        <img src="images/ruffled_tops.jpeg" alt="Ruffled Tops"/>
+                        <a class="item-title" href="#">Ruffled Tops,Lingerie</a>
+                        <a class="prices" href="#">From ₹149+Extra 10%Off</a>
+                        <a class="about" href="#">Harpa,Zivame,Dreambe...</a>
+                    </div>
+                    <!-- Flex item 3 -->
+                    <div class="item-container deals-item">
+                        <img src="images/tables.jpeg" alt="Coffee Tables"/>
+                        <a class="item-title" href="#">Coffee Tables & more</a>
+                        <a class="prices" href="#">From ₹199</a>
+                        <a class="about" href="#">Deal of The Day</a>
+                    </div>
+                    <!-- Flex item 4 -->
+                    <div class="item-container deals-item">
+                        <img src="images/jewellery.jpeg" alt="Jewellery"/>
+                        <a class="item-title" href="#">Don't Miss Extra disc...</a>
+                        <a class="prices" href="#">From ₹199+Extra 10% Off</a>
+                        <a class="about" href="#">Bestsellers@lowestprices</a>
+                    </div>
+                    <!-- Flex item 5 -->
+                    <div class="item-container deals-item">
+                        <img src="images/kids_winter.jpg" alt="Kids Winter Wear"/>
+                        <a class="item-title" href="#">Kids Winter Wear</a>
+                        <a class="prices" href="#">Min 50% Off</a>
+                        <a class="about" href="#">Nick and Jonas ,...</a>
+                    </div>  
+                        <ion-icon class="slider-icon" name="chevron-forward-outline"></ion-icon>
+                    
+                </div>
+            </div>
+            <!-- Ad Container -->
+            <div class="ad-container">
+                <img class="ad" src="images/ads.jpg" Alt="Advertise">
+            </div>
+        </section>
+
+    <!-- Furniture Section -->
+        <section class="section-items items-container">
+                <!-- Items Heading-->
+                <div class="furniture-heading-container ">
+                        <div class="heading">
+                        Furniture Bestsellers
+                        </div>
+                        <a class="view-btn" href="#">view all</a> 
+                </div>
+                <!-- Items -->
+                <div class="fur-item-container">
+                    <!-- Flex item 1 -->
+                    <div class="item-container deals-item">
+                        <img src="images/swings.jpeg" alt="Hammock & Swings"/>
+                        <a class="item-title" href="#">Hammock & Swings</a>
+                        <a class="prices" href="#">From ₹299</a>
+                        <a class="about" href="#">MT HUB,Swingzy</a>
+                    </div>
+                    <!-- Flex item 2 -->
+                    <div class="item-container deals-item">
+                        <img src="images/study_chair.jpeg" alt="Office & Study Chairs"/>
+                        <a class="item-title" href="#">Office & Study Chairs</a>
+                        <a class="prices" href="#">From ₹499+Extra 50%Off</a>
+                        <a class="about" href="#">Fabric & Leatherette</a>
+                    </div>
+                    <!-- Flex item 3 -->
+                    <div class="item-container deals-item">
+                        <img src="images/tv_unit.jpeg" alt="Tv Units"/>
+                        <a class="item-title" href="#">Tv Units</a>
+                        <a class="prices" href="#">From ₹2,100</a>
+                        <a class="about" href="#">Forzza,Zuari & more</a>
+                    </div>
+                    <!-- Flex item 4 -->
+                    <div class="item-container deals-item">
+                        <img src="images/tank.jpeg" alt="Aquarium Tank"/>
+                        <a class="item-title" href="#">Aquarium Tank</a>
+                        <a class="prices" href="#">From ₹299</a>
+                        <a class="about" href="#">Flat,Round,Cube & more</a>
+                    </div>
+                    <!-- Flex item 5 -->
+                    <div class="item-container deals-item">
+                        <img src="images/kichen_trolley.jpeg" alt="Kitchen Trolley"/>
+                        <a class="item-title" href="#">Kitchen Trolley</a>
+                        <a class="prices" href="#">Min 50% Off</a>
+                        <a class="about" href="#">Trendy Collection</a>
+                    </div>  
+                    <!-- Flex item 6 -->
+                    <div class="item-container deals-item">
+                        <img src="images/cabinet_drawers.jpeg" alt="Cabinet And Drawers"/>
+                        <a class="item-title" href="#">Cabinet And Drawers</a>
+                        <a class="prices" href="#">From ₹199</a>
+                        <a class="about" href="#">New Collection</a>
+                    </div> 
+                    <ion-icon class="slider-icon" name="chevron-forward-outline"></ion-icon>
+                </div>
+            
+        </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
